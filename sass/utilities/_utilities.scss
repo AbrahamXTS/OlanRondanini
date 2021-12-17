@@ -1,17 +1,23 @@
+$primario: #402005;
+
+body {
+	font-family: "MuseoSans", sans-serif;
+}
+
 .flex {
 	display: flex;
 	align-items: center;
 }
 
 .contenedor {
-	margin: 0 auto;
-	max-width: 100rem;
+	width: 90%;
+	max-width: 110rem;
+	margin: 0rem auto;
 }
 
 .boton {
 	border: none;
 	color: white;
-	text-align: center;
 	padding: 1.25rem 1.5rem;
-	background-color: #402005;
+	background-color: $primario;
 }

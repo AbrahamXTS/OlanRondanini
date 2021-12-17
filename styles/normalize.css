@@ -6,9 +6,10 @@ html {
 }
 
 *,
-*:before,
-*:after {
+:after,
+:before {
 	box-sizing: inherit;
+	transition: 0.2s ease-in-out;
 }
 
 body {

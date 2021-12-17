@@ -1,0 +1,63 @@
+@use "../utilities/utilities" as var;
+
+nav {
+	width: 100%;
+	height: 5rem;
+	position: fixed;
+	background-color: var.$primario;
+
+	.navegacion {
+		height: 100%;
+		justify-content: space-between;
+
+		.navegacion__logo {
+			height: 4rem;
+			cursor: pointer;
+		}
+
+		.navegacion__boton {
+			border: none;
+			padding: 0rem;
+			background: none;
+
+			svg {
+				height: 4.5rem;
+				cursor: pointer;
+			}
+		}
+
+		.navegacion__opciones {
+			display: none;
+		}
+
+		@media (min-width: 768px) {
+			.navegacion__boton {
+				display: none;
+			}
+
+			.navegacion__opciones {
+				display: block;
+			}
+
+			.navegacion__opciones a {
+				color: white;
+			}
+
+			.navegacion__opciones a:not(:first-child) {
+				margin-left: 2rem;
+			}
+		}
+	}
+
+	.navegacion__opciones--movil {
+		height: 0rem;
+		flex-direction: column;
+		background-color: white;
+	}
+
+	.navegacion__opciones--movil a {
+		display: none;
+		margin: 1.4rem 0rem;
+		color: var.$primario;
+	}
+}
