@@ -6,10 +6,13 @@ document.addEventListener("DOMContentLoaded", () => {
 	botonNavegacion.addEventListener("click", () => {
 		if (menuMovil.style.height == "230.4px") {
 			menuMovil.style.height = "0rem";
-			menuMovilOpciones.forEach((e) => (e.style.display = "none"));
+			menuMovilOpciones.forEach((opcion) => (opcion.style.display = "none"));
 		} else {
 			menuMovil.style.height = "230.4px";
-			setTimeout(() => menuMovilOpciones.forEach((e) => (e.style.display = "block")), 100);
+			setTimeout(
+				() => menuMovilOpciones.forEach((opcion) => (opcion.style.display = "block")),
+				100
+			);
 		}
 	});
 });

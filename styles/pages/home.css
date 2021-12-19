@@ -1,4 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap");
 body {
+  background-color: #f8f1f1;
   font-family: "MuseoSans", sans-serif;
 }
 
@@ -16,13 +18,36 @@ body {
 .boton {
   border: none;
   color: white;
+  cursor: pointer;
   padding: 1.25rem 1.5rem;
   background-color: #402005;
+  border-radius: 6px;
+}
+
+h2 {
+  margin: 0rem;
+  font-size: 2.5rem;
+  text-align: center;
+  color: #402005;
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 3rem;
+  }
+}
+.linea {
+  width: 10rem;
+  height: 0.5rem;
+  margin: 1rem auto 0rem auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../../images/linea.png);
 }
 
 nav {
   width: 100%;
-  height: 5rem;
+  height: 6rem;
   position: fixed;
   background-color: #402005;
 }
@@ -72,48 +97,119 @@ nav .navegacion__opciones--movil a {
 }
 
 .blank {
-  height: 5rem;
+  height: 6rem;
 }
 
 header {
-  height: auto;
+  background-color: white;
+}
+header .header {
   flex-direction: column;
 }
-header img {
-  width: 100%;
+header .header img {
+  width: 90%;
   margin-bottom: 2rem;
 }
 @media (min-width: 768px) {
-  header img {
+  header .header img {
     width: auto;
-    height: 52rem;
+    height: 50rem;
   }
 }
-header .informacion {
+header .header .informacion {
   padding-top: 1rem;
   flex-direction: column;
-  border-top: 1px solid black;
+  border-top: 1px solid #784d3c;
 }
-header .informacion p {
+header .header .informacion p {
   line-height: 2;
   font-size: 1.7rem;
   text-align: justify;
 }
-header .informacion a {
+header .header .informacion a {
   margin: 2rem 0rem;
 }
 @media (min-width: 768px) {
-  header .informacion p {
+  header .header .informacion p {
     padding: 1rem 5rem;
   }
-  header .informacion a {
+  header .header .informacion a {
     margin-top: 0.5rem;
   }
 }
 
-section {
-  padding-top: 50rem;
-  background-color: #e9e9e9;
+section.servicios {
+  padding-top: 3.5rem;
+  background-color: #f8f1f1;
+}
+section.servicios .areas {
+  gap: 2rem;
+  display: grid;
+  padding-top: 2.5rem;
+  grid-template-columns: 1fr;
+}
+section.servicios .areas .elemento {
+  line-height: 0;
+  border-radius: 6px;
+  background-color: white;
+}
+section.servicios .areas .elemento h4 {
+  padding: 0.5rem;
+  text-align: center;
+  color: #784d3c;
+}
+section.servicios .areas .elemento:hover {
+  border-bottom: solid 1rem #784d3c;
+}
+@media (min-width: 540px) {
+  section.servicios .areas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 768px) {
+  section.servicios .areas {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+main.firma {
+  padding-top: 5rem;
+}
+main.firma .contenedor p {
+  line-height: 2;
+  font-size: 1.7rem;
+  padding-top: 2.5rem;
+  text-align: justify;
+}
+
+section.caracteristicas .grid {
+  gap: 2rem;
+  display: grid;
+  padding-top: 2.5rem;
+  grid-template-columns: 1fr;
+}
+section.caracteristicas .grid .elemento {
+  border-radius: 6px;
+  text-align: center;
+  background-color: white;
+}
+section.caracteristicas .grid .elemento i {
+  margin: 2rem 0rem;
+  color: #784d3c;
+}
+section.caracteristicas .grid .elemento h4 {
+  margin: 0rem;
+  color: #402005;
+}
+section.caracteristicas .grid .elemento p {
+  line-height: 1.5;
+  text-align: justify;
+  padding: 1rem 2rem 2rem 2rem;
+}
+@media (min-width: 768px) {
+  section.caracteristicas .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /*# sourceMappingURL=home.css.map */

@@ -1,6 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap");
+
 $primario: #402005;
+$secundario: #784d3c;
 
 body {
+	background-color: #f8f1f1;
 	font-family: "MuseoSans", sans-serif;
 }
 
@@ -18,6 +22,30 @@ body {
 .boton {
 	border: none;
 	color: white;
+	cursor: pointer;
 	padding: 1.25rem 1.5rem;
 	background-color: $primario;
+	border-radius: 6px;
+}
+
+h2 {
+	margin: 0rem;
+	font-size: 2.5rem;
+	text-align: center;
+	color: $primario;
+}
+
+@media (min-width: 768px) {
+	h2 {
+		font-size: 3rem;
+	}
+}
+
+.linea {
+	width: 10rem;
+	height: 0.5rem;
+	margin: 1rem auto 0rem auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url(../../images/linea.png);
 }
