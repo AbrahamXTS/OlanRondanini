@@ -1,5 +1,6 @@
 @use "../components/navigation";
 @use "../utilities/utilities" as var;
+@use "../components/footer";
 
 .blank {
 	height: 6rem;
@@ -137,6 +138,82 @@ section.caracteristicas {
 	@media (min-width: 768px) {
 		.grid {
 			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+}
+
+section.contacto {
+	padding: 5rem 0rem;
+
+	.grid {
+		gap: 2rem;
+		display: grid;
+		padding-top: 2.5rem;
+		grid-template-columns: 1fr;
+
+		.formulario {
+			form {
+				label {
+					display: block;
+					margin-top: 1rem;
+				}
+
+				input {
+					width: 100%;
+					padding: 1rem;
+					margin-top: 1rem;
+					border-radius: 4px;
+					border: solid 1px #d3d3d3;
+				}
+
+				textarea {
+					width: 100%;
+					resize: none;
+					padding: 1rem;
+					margin-top: 1rem;
+					border-radius: 4px;
+					border: solid 1px #d3d3d3;
+				}
+
+				.boton {
+					margin-top: 1rem;
+					padding: 1rem 0rem;
+				}
+			}
+		}
+
+		iframe {
+			height: 98%;
+			width: 100%;
+			border-radius: 6px;
+		}
+	}
+
+	@media (min-width: 768px) {
+		.grid {
+			gap: 2.5rem;
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		.formulario {
+			form {
+				gap: 1.5rem;
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+
+				.nombre {
+					grid-column: 1 / 2;
+				}
+
+				.correo {
+					grid-column: 2 / 3;
+				}
+
+				.asunto,
+				.mensaje {
+					grid-column: 1 / 3;
+				}
+			}
 		}
 	}
 }

@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+	const fecha = document.querySelector(".fecha");
 	const botonNavegacion = document.querySelector(".navegacion__boton");
 	const menuMovil = document.querySelector(".navegacion__opciones--movil");
 	const menuMovilOpciones = document.querySelectorAll(".navegacion__opciones--movil a");
@@ -15,4 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			);
 		}
 	});
+
+	const año = new Date();
+	fecha.textContent = año.getFullYear();
 });
