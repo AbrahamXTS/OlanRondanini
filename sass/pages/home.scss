@@ -2,10 +2,6 @@
 @use "../utilities/utilities" as var;
 @use "../components/footer";
 
-.blank {
-	height: 6rem;
-}
-
 header {
 	background-color: white;
 
@@ -156,6 +152,8 @@ section.contacto {
 				label {
 					display: block;
 					margin-top: 1rem;
+					font-weight: bold;
+					color: var.$primario;
 				}
 
 				input {
@@ -186,6 +184,7 @@ section.contacto {
 			height: 98%;
 			width: 100%;
 			border-radius: 6px;
+			border: 3.5px solid var.$secundario;
 		}
 	}
 
@@ -197,7 +196,7 @@ section.contacto {
 
 		.formulario {
 			form {
-				gap: 1.5rem;
+				gap: 1rem;
 				display: grid;
 				grid-template-columns: 1fr 1fr;
 
