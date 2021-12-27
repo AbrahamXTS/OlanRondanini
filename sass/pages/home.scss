@@ -1,6 +1,6 @@
 @use "../components/navigation";
-@use "../utilities/utilities" as var;
 @use "../components/footer";
+@use "../utilities/utilities" as var;
 
 header {
 	background-color: white;
@@ -128,6 +128,10 @@ section.caracteristicas {
 				text-align: justify;
 				padding: 1rem 2rem 2rem 2rem;
 			}
+		}
+
+		.elemento:hover {
+			border-top: solid 1rem var.$secundario;
 		}
 	}
 

@@ -231,6 +231,9 @@ section.caracteristicas .grid .elemento p {
   text-align: justify;
   padding: 1rem 2rem 2rem 2rem;
 }
+section.caracteristicas .grid .elemento:hover {
+  border-top: solid 1rem #784d3c;
+}
 @media (min-width: 768px) {
   section.caracteristicas .grid {
     grid-template-columns: repeat(3, 1fr);
