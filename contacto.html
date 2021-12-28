@@ -18,7 +18,9 @@
 	<body>
 		<nav>
 			<div class="flex contenedor navegacion">
-				<img src="./images/branding.png" class="navegacion__logo" alt="Olán & Rondanini" />
+				<a href="/"
+					><img src="./images/branding.png" class="navegacion__logo" alt="Olán & Rondanini"
+				/></a>
 				<button class="navegacion__boton">
 					<!-- prettier-ignore -->
 					<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="64" height="64" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round"> <path stroke="none" d="M0 0h24v24H0z" fill="none" /> <line x1="12" y1="6" x2="26" y2="6" /> <line x1="12" y1="12" x2="26" y2="12" /> <line x1="12" y1="18" x2="26" y2="18" /></svg>
@@ -45,22 +47,22 @@
 
 			<div class="grid">
 				<div class="formulario">
-					<form action="" netlify>
+					<form action="/contacto" netlify>
 						<div class="nombre">
 							<label name="Nombre" for="Nombre">Nombre: </label>
-							<input name="Nombre" id="Nombre" type="text" />
+							<input name="Nombre" id="Nombre" type="text" required />
 						</div>
 						<div class="correo">
 							<label name="Correo" for="Correo">Correo electronico: </label>
-							<input name="Correo" id="Correo" type="email" />
+							<input name="Correo" id="Correo" type="email" required />
 						</div>
 						<div class="asunto">
 							<label name="Asunto" for="Asunto">Asunto: </label>
-							<input name="Asunto" id="Asunto" type="text" />
+							<input name="Asunto" id="Asunto" type="text" required />
 						</div>
 						<div class="mensaje">
 							<label name="Mensaje" for="Mensaje">Mensaje: </label>
-							<textarea name="Mensaje" id="Mensaje" rows="4"></textarea>
+							<textarea name="Mensaje" id="Mensaje" rows="4" required></textarea>
 						</div>
 						<input type="submit" class="boton" value="Enviar mensaje" />
 					</form>
