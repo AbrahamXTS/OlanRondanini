@@ -1,0 +1,110 @@
+@use "../components/navigation";
+@use "../components/footer";
+@use "../utilities/utilities" as var;
+
+main.firma {
+	padding-top: 5rem;
+
+	.contenedor {
+		p {
+			line-height: 2;
+			font-size: 1.7rem;
+			padding-top: 2.5rem;
+			text-align: justify;
+		}
+	}
+}
+
+section.caracteristicas {
+	.grid {
+		gap: 2rem;
+		display: grid;
+		padding: 2.5rem 0rem;
+		grid-template-columns: 1fr;
+
+		.elemento {
+			border-radius: 6px;
+			text-align: center;
+			background-color: white;
+
+			i {
+				margin: 2rem 0rem;
+				color: var.$secundario;
+			}
+
+			h4 {
+				margin: 0rem;
+				color: var.$primario;
+			}
+
+			p {
+				line-height: 1.5;
+				text-align: justify;
+				padding: 1rem 2rem 2rem 2rem;
+			}
+		}
+
+		.elemento:hover {
+			border-top: solid 1rem var.$secundario;
+		}
+	}
+
+	@media (min-width: 768px) {
+		.grid {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+}
+
+section.mision {
+	padding-top: 2.5rem;
+
+	.contenedor {
+		p {
+			line-height: 2;
+			font-size: 1.7rem;
+			padding-top: 2.5rem;
+			text-align: justify;
+		}
+	}
+}
+
+section.valores {
+	padding: 3.5rem 0rem;
+	background-color: #f8f1f1;
+
+	.areas {
+		gap: 2rem;
+		display: grid;
+		padding-top: 2.5rem;
+		grid-template-columns: 1fr;
+
+		.elemento {
+			line-height: 0;
+			border-radius: 6px;
+			background-color: white;
+
+			h4 {
+				padding: 0.5rem;
+				text-align: center;
+				color: var.$secundario;
+			}
+		}
+
+		.elemento:hover {
+			border-bottom: solid 1rem var.$secundario;
+		}
+	}
+
+	@media (min-width: 540px) {
+		.areas {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
+	@media (min-width: 768px) {
+		.areas {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+}

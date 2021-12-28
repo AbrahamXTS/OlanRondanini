@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap");
+body {
+  background-color: #f8f1f1;
+  font-family: "MuseoSans", sans-serif;
+}
+
+.blank {
+  height: 6rem;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 110rem;
+  margin: 0rem auto;
+}
+
+.boton {
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 1.25rem 1.5rem;
+  background-color: #402005;
+  border-radius: 6px;
+}
+
+h2 {
+  margin: 0rem;
+  font-size: 2.5rem;
+  text-align: center;
+  color: #402005;
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 3rem;
+  }
+}
+.linea {
+  width: 10rem;
+  height: 0.5rem;
+  margin: 1rem auto 0rem auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../../images/linea.png);
+}
+
+nav {
+  width: 100%;
+  height: 6rem;
+  position: fixed;
+  background-color: #402005;
+}
+nav .navegacion {
+  height: 100%;
+  justify-content: space-between;
+}
+nav .navegacion .navegacion__logo {
+  height: 4rem;
+}
+nav .navegacion .navegacion__boton {
+  border: none;
+  padding: 0rem;
+  background: none;
+}
+nav .navegacion .navegacion__boton svg {
+  height: 4.5rem;
+  cursor: pointer;
+}
+nav .navegacion .navegacion__opciones {
+  display: none;
+}
+@media (min-width: 768px) {
+  nav .navegacion .navegacion__boton {
+    display: none;
+  }
+  nav .navegacion .navegacion__opciones {
+    display: block;
+  }
+  nav .navegacion .navegacion__opciones a {
+    color: white;
+  }
+  nav .navegacion .navegacion__opciones a:not(:first-child) {
+    margin-left: 2rem;
+  }
+}
+nav .navegacion__opciones--movil {
+  height: 0rem;
+  flex-direction: column;
+  background-color: white;
+}
+nav .navegacion__opciones--movil a {
+  display: none;
+  margin: 1.4rem 0rem;
+  color: #402005;
+}
+
+footer {
+  background-color: #402005;
+}
+footer .contenedor {
+  display: flex;
+  justify-content: space-between;
+}
+footer .contenedor p,
+footer .contenedor a {
+  color: white;
+  font-size: 1.2rem;
+  padding: 2.5rem 0rem;
+}
+@media (max-width: 767px) {
+  footer .contenedor {
+    display: block;
+  }
+  footer .contenedor p {
+    text-align: center;
+  }
+  footer .contenedor a {
+    display: none;
+  }
+}
+
+main.firma {
+  padding-top: 5rem;
+}
+main.firma .contenedor p {
+  line-height: 2;
+  font-size: 1.7rem;
+  padding-top: 2.5rem;
+  text-align: justify;
+}
+
+section.caracteristicas .grid {
+  gap: 2rem;
+  display: grid;
+  padding: 2.5rem 0rem;
+  grid-template-columns: 1fr;
+}
+section.caracteristicas .grid .elemento {
+  border-radius: 6px;
+  text-align: center;
+  background-color: white;
+}
+section.caracteristicas .grid .elemento i {
+  margin: 2rem 0rem;
+  color: #784d3c;
+}
+section.caracteristicas .grid .elemento h4 {
+  margin: 0rem;
+  color: #402005;
+}
+section.caracteristicas .grid .elemento p {
+  line-height: 1.5;
+  text-align: justify;
+  padding: 1rem 2rem 2rem 2rem;
+}
+section.caracteristicas .grid .elemento:hover {
+  border-top: solid 1rem #784d3c;
+}
+@media (min-width: 768px) {
+  section.caracteristicas .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+section.mision {
+  padding-top: 2.5rem;
+}
+section.mision .contenedor p {
+  line-height: 2;
+  font-size: 1.7rem;
+  padding-top: 2.5rem;
+  text-align: justify;
+}
+
+section.valores {
+  padding: 3.5rem 0rem;
+  background-color: #f8f1f1;
+}
+section.valores .areas {
+  gap: 2rem;
+  display: grid;
+  padding-top: 2.5rem;
+  grid-template-columns: 1fr;
+}
+section.valores .areas .elemento {
+  line-height: 0;
+  border-radius: 6px;
+  background-color: white;
+}
+section.valores .areas .elemento h4 {
+  padding: 0.5rem;
+  text-align: center;
+  color: #784d3c;
+}
+section.valores .areas .elemento:hover {
+  border-bottom: solid 1rem #784d3c;
+}
+@media (min-width: 540px) {
+  section.valores .areas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 768px) {
+  section.valores .areas {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/*# sourceMappingURL=nosotros.css.map */
