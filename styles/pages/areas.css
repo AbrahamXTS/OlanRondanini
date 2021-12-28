@@ -124,4 +124,48 @@ footer .contenedor a {
   }
 }
 
+section.servicios {
+  padding: 3.5rem 0rem;
+  background-color: #f8f1f1;
+}
+section.servicios p {
+  line-height: 2;
+  font-size: 1.7rem;
+  text-align: justify;
+  padding-top: 2.5rem;
+}
+section.servicios .areas {
+  gap: 2rem;
+  display: grid;
+  padding-top: 2.5rem;
+  grid-template-columns: 1fr;
+}
+section.servicios .areas .elemento {
+  line-height: 0;
+  border-radius: 6px;
+  background-color: white;
+}
+section.servicios .areas .elemento img {
+  width: 100%;
+  border-radius: 6px 6px 0px 0px;
+}
+section.servicios .areas .elemento h4 {
+  padding: 0.5rem;
+  text-align: center;
+  color: #784d3c;
+}
+section.servicios .areas .elemento:hover {
+  border-bottom: solid 1rem #784d3c;
+}
+@media (min-width: 540px) {
+  section.servicios .areas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 768px) {
+  section.servicios .areas {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 /*# sourceMappingURL=areas.css.map */

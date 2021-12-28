@@ -1,3 +1,55 @@
 @use "../components/navigation";
 @use "../components/footer";
 @use "../utilities/utilities" as var;
+
+section.servicios {
+	padding: 3.5rem 0rem;
+	background-color: #f8f1f1;
+
+	p {
+		line-height: 2;
+		font-size: 1.7rem;
+		text-align: justify;
+		padding-top: 2.5rem;
+	}
+
+	.areas {
+		gap: 2rem;
+		display: grid;
+		padding-top: 2.5rem;
+		grid-template-columns: 1fr;
+
+		.elemento {
+			line-height: 0;
+			border-radius: 6px;
+			background-color: white;
+
+			img {
+				width: 100%;
+				border-radius: 6px 6px 0px 0px;
+			}
+
+			h4 {
+				padding: 0.5rem;
+				text-align: center;
+				color: var.$secundario;
+			}
+		}
+
+		.elemento:hover {
+			border-bottom: solid 1rem var.$secundario;
+		}
+	}
+
+	@media (min-width: 540px) {
+		.areas {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
+	@media (min-width: 768px) {
+		.areas {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+}
