@@ -181,7 +181,7 @@ section.contacto .grid .ubicacion iframe {
   border-radius: 6px;
   border: 3.5px solid #784d3c;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   section.contacto .grid {
     gap: 2.5rem;
     grid-template-columns: repeat(2, 1fr);
