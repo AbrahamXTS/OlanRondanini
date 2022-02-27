@@ -3,24 +3,37 @@
 	<head>
 		<meta charset="UTF-8" />
 		<title>Olán & Rondanini | Despacho Jurídico</title>
+		<link rel="preload" href="./styles/normalize.css" as="style" />
 		<link rel="stylesheet" href="./styles/normalize.css" />
+		<link rel="preload" href="./styles/pages/areas.css" as="style" />
 		<link rel="stylesheet" href="./styles/pages/areas.css" />
 		<link rel="stylesheet" href="./styles/font/museo.css" />
-		<link
-			rel="stylesheet"
-			href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-			integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-			crossorigin="anonymous"
-		/>
-		<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+		<link rel="shortcut icon" href="images/favicon.png" type="image" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="title" content="Olán & Rondanini | Despacho Jurídico">
+		<meta name="description" content="Despacho jurídico con abogados en materia civil, mercantil, familiar, penal y amparos en Ciudad del Carmen, Campeche.">
+		<meta name="keywords" content="Despacho Jurídico Olán Rondanini, Olán, Rondanini, Olán Rondanini, Ciudad del Carmen, Campeche, Abogado, Litigios, Derecho, Civil, Mercantil, Familiar, Penal, Amparos, Gestoria">
+		<meta name="robots" content="index, follow">
+		<meta name="language" content="Spanish">
+		<meta property="og:title" content="Olán & Rondanini | Abogados" />
+		<meta property="og:site_name" content="Olán & Rondanini | Abogados" />
+		<!-- Cambiar URL -->
+		<meta property="og:image" content="https://olanrondaniniabogados.com/images/favicon.png" /> 
+		<meta property="og:description" content="Despacho jurídico con abogados en materia civil, mercantil, familiar, penal y amparos en Ciudad del Carmen, Campeche." />
+		<!-- Cambiar URL -->
+		<meta property="og:url" content="https://olanrondaniniabogados.com" />
+		<meta property="og:type" content="website" />
 	</head>
 	<body>
 		<nav>
 			<div class="flex contenedor navegacion">
-				<a href="/"><img src="./images/branding.png" class="navegacion__logo" alt="Olán & Rondanini" /></a>
-				<button class="navegacion__boton">
-					<!-- prettier-ignore -->
+				<a href="/">
+					<picture>
+						<source class="navegacion__logo" srcset="./images/branding.webp" type="image/webp">
+						<img src="./images/branding.png" class="navegacion__logo" alt="Olán & Rondanini"/>
+					</picture>
+				</a>
+				<button class="navegacion__boton" title="navegacion">
 					<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="64" height="64" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round"> <path stroke="none" d="M0 0h24v24H0z" fill="none" /> <line x1="12" y1="6" x2="26" y2="6" /> <line x1="12" y1="12" x2="26" y2="12" /> <line x1="12" y1="18" x2="26" y2="18" /></svg>
 				</button>
 				<div class="navegacion__opciones">
@@ -44,30 +57,47 @@
 				<h2>Áreas de práctica</h2>
 				<div class="linea">&nbsp;</div>
 				<p>Nuestra firma se encuentra compuesta por abogados experimentados y con mentalidad empresarial respetados como líderes de pensamiento dentro de sus respectivas industrias, nuestra firma multidisciplinaria ofrece lo que los clientes realmente quieren: <strong>lograr los objetivos de hoy mientras construyen una plataforma para el éxito del mañana.</strong></p>
-
 				<div class="areas">
 					<div href="./areas-de-practica/civil" class="elemento">
-						<img src="./images/servicios/civil.jpg" alt="Derecho civil">
+						<picture>
+							<source loading="lazy" srcset="./images/servicios/civil.webp" type="image/webp">
+							<img loading="lazy" src="./images/servicios/civil.jpg" alt="Derecho civil">
+						</picture>
 						<h4>Derecho Civil</h4>
 					</div>
 					<div href="./areas-de-practica/mercantil" class="elemento">
-						<img src="./images/servicios/mercantil.jpg" alt="Derecho mercantil">
+						<picture>
+							<source loading="lazy" srcset="./images/servicios/mercantil.webp" type="image/webp">
+							<img loading="lazy" src="./images/servicios/mercantil.jpg" alt="Derecho mercantil">
+						</picture>
 						<h4>Derecho Mercantil</h4>
 					</div>
 					<div href="./areas-de-practica/familiar" class="elemento">
-						<img src="./images/servicios/familiar.jpg" alt="Derecho familiar">
+						<picture>
+							<source loading="lazy" srcset="./images/servicios/familiar.webp" type="image/webp">
+							<img loading="lazy" src="./images/servicios/familiar.jpg" alt="Derecho familiar">
+						</picture>
 						<h4>Derecho Familiar</h4>
 					</div>
 					<div href="./areas-de-practica/penal" class="elemento">
-						<img src="./images/servicios/penal.jpg" alt="Derecho penal">
+						<picture>
+							<source loading="lazy" srcset="./images/servicios/penal.webp" type="image/webp">
+							<img loading="lazy" src="./images/servicios/penal.jpg" alt="Derecho penal">
+						</picture>
 						<h4>Derecho Penal</h4>
 					</div>
 					<div href="./areas-de-practica/amparos" class="elemento">
-						<img src="./images/servicios/amparos.jpg" alt="Amparos">
+						<picture>
+							<source loading="lazy" srcset="./images/servicios/amparos.webp" type="image/webp">
+							<img loading="lazy" src="./images/servicios/amparos.jpg" alt="Amparos">
+						</picture>
 						<h4>Amparos</h4>
 					</div>
 					<div href="./areas-de-practica/gestoria" class="elemento">
-						<img src="./images/servicios/gestoria.jpg" alt="Gestoria">
+						<picture>
+							<source loading="lazy" srcset="./images/servicios/gestoria.webp" type="image/webp">
+							<img loading="lazy" src="./images/servicios/gestoria.jpg" alt="Gestoria">
+						</picture>
 						<h4>Gestoría Administrativa</h4>
 					</div>
 				</div>
@@ -78,7 +108,6 @@
 		<footer>
 			<div class="contenedor">
 				<p>Copyright &copy; <span class="fecha"></span> Olán & Rondanini</p>
-				<a href="#">Mapa del sitio</a>
 			</div>
 		</footer>
 
