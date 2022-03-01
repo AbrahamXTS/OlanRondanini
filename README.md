@@ -1,4 +1,4 @@
-# Olán & Rondanini
+# Olan & Rondanini
 
 Página del Despacho Jurídico Olan & Rondanini. 👨‍⚖️
 
